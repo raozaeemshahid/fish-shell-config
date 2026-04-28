@@ -192,3 +192,7 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
+# Android SDK
+set -gx ANDROID_HOME "$HOME/Android/Sdk"
+fish_add_path $ANDROID_HOME/platform-tools $ANDROID_HOME/tools
